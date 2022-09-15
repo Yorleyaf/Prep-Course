@@ -218,21 +218,13 @@ function tablaDelSeis(seis){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   l
- document.write(<h2> "tabla de multiplicar del" + seis  </h2>);
- document.write(<ul>
-  for (let i = 0; i <= 10; i++){
-    document.write(<li>
-      document.write(i + "X" + seis + "= " + (seis * i));
-     
-      </li>)
-
+  let arrayTablaDel6 = []
+  for (let i = 0; i < 11; i++) {
+        arrayTablaDel6.push(6 * i)
   }
-  </ul>)
+  return arrayTablaDel6
   }
- // 0 x 6 = 0
- // 1 x 6 = 6
- //......
- // 10 x 6 = 60
+ 
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
